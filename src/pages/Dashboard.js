@@ -24,7 +24,7 @@ const Dashboard = () => {
       owner: "Ania Kubow",
       avatar:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd4o1tYpMhsE_grbq1KEfE4rg0Pshi6Cx54g&usqp=CAU",
-      status: "done",
+      status: "working on it",
       priority: 2,
       progress: 70,
       description: "Make a video about AI.",
@@ -37,12 +37,20 @@ const Dashboard = () => {
       owner: "Ania Kubow",
       avatar:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd4o1tYpMhsE_grbq1KEfE4rg0Pshi6Cx54g&usqp=CAU",
-      status: "done",
+      status: "stuck",
       priority: 3,
-      progress: 70,
+      progress: 10,
       description: "Make a video about making a bot.",
       timestamp: "2022-02-13T07:36:17+0000",
     },
+  ];
+
+  const colors = [
+    "rgb(255,179,186)",
+    "rgb(255,223,186)",
+    "rgb(255,255,186)",
+    "rgb(186,255,201)",
+    "rgb(186,225,255)",
   ];
 
   const uniqueCategories = [
@@ -63,7 +71,7 @@ const Dashboard = () => {
                   <TicketCard
                     id={_index}
                     key={_index}
-                    color={filteredTicket.color}
+                    color={colors[categoryIndex] || colors[0]}
                     ticket={filteredTicket}
                   />
                 ))}
