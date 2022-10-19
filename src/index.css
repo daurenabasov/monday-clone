@@ -160,3 +160,43 @@ nav .icon {
   align-items: center;
   color: rgb(255, 255, 255);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====== TICKET PAGE ========= */
+
+.ticket {
+  padding: 30px;
+  width: 100%;
+}
+
+
+.ticket .ticket-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.ticket form {
+  display: flex;
+}
+
+.ticket form section {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 500px;
+
+}
