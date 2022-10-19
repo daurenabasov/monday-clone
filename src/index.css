@@ -42,7 +42,6 @@ nav .icon {
   color: rgb(25, 255, 255);
 }
 
-
 .ticket-container::-webkit-scrollbar {
   opacity: 0;
 }
@@ -140,7 +139,6 @@ nav .icon {
   height: 100%;
 }
 
-
 .ticket-card .delete-block {
   background-color: rgb(211, 211, 211);
   width: 50px;
@@ -161,19 +159,6 @@ nav .icon {
   color: rgb(255, 255, 255);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ====== TICKET PAGE ========= */
 
 .ticket {
@@ -181,13 +166,11 @@ nav .icon {
   width: 100%;
 }
 
-
 .ticket .ticket-container {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-
 
 .ticket form {
   display: flex;
@@ -198,5 +181,22 @@ nav .icon {
   flex-direction: column;
   margin: 10px;
   width: 500px;
+}
 
+.ticket form label {
+  margin: 20px 0 0 0;
+}
+
+.ticket form select,
+.ticket form input {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1.5px solid rgb(218, 218, 218);
+  margin: 5px;
+}
+
+.ticket form .multiple-input-container {
+    /* display: flex; */
+    margin: 20px 0 20px 0; 
 }
